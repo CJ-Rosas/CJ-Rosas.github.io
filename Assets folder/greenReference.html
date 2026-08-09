@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MANIFEST // [YOUR NAME]</title>
+        <style>
+            /* =========================================================
+           1. EASY EDIT VARS: Change colors & styles here
+           ========================================================= */
+            :root {
+                --bg: #f2f2eb;
+                --main: #000000;
+                --accent: #ccff00; /* Neon Lime/Yellow */
+                --white: #ffffff;
+                --font-mono: "Courier New", Courier, monospace;
+                --font-sans: Arial, Helvetica, sans-serif;
+                --border: 4px solid var(--main);
+                --shadow: 6px 6px 0px var(--main);
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: var(--bg);
+                color: var(--main);
+                font-family: var(--font-sans);
+                padding: 20px;
+                line-height: 1.4;
+            }
+
+            /* Brutalist Box Containers */
+            .b-box {
+                background: var(--white);
+                border: var(--border);
+                box-shadow: var(--shadow);
+                padding: 24px;
+                margin-bottom: 30px;
+                position: relative;
+            }
+
+            .b-tag {
+                background: var(--accent);
+                border: var(--border);
+                display: inline-block;
+                font-family: var(--font-mono);
+                font-weight: bold;
+                font-size: 0.85rem;
+                padding: 4px 10px;
+                text-transform: uppercase;
+                position: absolute;
+                top: -16px;
+                left: 16px;
+            }
+
+            /* Typography */
+            h1 {
+                font-size: clamp(2.5rem, 6vw, 5rem);
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: -2px;
+                line-height: 0.9;
+            }
+
+            h2 {
+                font-family: var(--font-mono);
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                border-bottom: var(--border);
+                padding-bottom: 5px;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+
+            .mono-text {
+                font-family: var(--font-mono);
+            }
+
+            /* Grid Layouts */
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+
+            .grid-2 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+            }
+
+            /* Header Marquee Bar */
+            .status-bar {
+                background: var(--main);
+                color: var(--white);
+                font-family: var(--font-mono);
+                padding: 8px 15px;
+                font-size: 0.9rem;
+                margin-bottom: 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            /* List Items & Badges */
+            ul {
+                list-style: none;
+            }
+
+            ul li {
+                position: relative;
+                padding-left: 20px;
+                margin-bottom: 10px;
+                font-size: 0.95rem;
+            }
+
+            ul li::before {
+                content: "■";
+                position: absolute;
+                left: 0;
+                font-size: 0.8rem;
+            }
+
+            .badge-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 15px;
+            }
+
+            .badge {
+                background: var(--bg);
+                border: 2px solid var(--main);
+                font-family: var(--font-mono);
+                font-size: 0.8rem;
+                font-weight: bold;
+                padding: 4px 8px;
+            }
+
+            /* Interactive Brutalist Buttons */
+            .b-button {
+                display: inline-block;
+                background: var(--accent);
+                border: var(--border);
+                box-shadow: 4px 4px 0px var(--main);
+                color: var(--main);
+                font-family: var(--font-mono);
+                font-weight: bold;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin-top: 10px;
+                text-transform: uppercase;
+                transition: all 0.1s ease;
+            }
+
+            .b-button:hover {
+                transform: translate(-2px, -2px);
+                box-shadow: 6px 6px 0px var(--main);
+            }
+
+            .b-button:active {
+                transform: translate(2px, 2px);
+                box-shadow: 2px 2px 0px var(--main);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- STATUS BAR HEADER -->
+            <div class="status-bar">
+                <span>[STATUS: AVAILABLE FOR HIRE]</span>
+                <span>SYS_LOG_2026.RAW</span>
+            </div>
+
+            <!-- HERO / ABOUT ME SECTION -->
+            <header class="b-box">
+                <span class="b-tag">01 // SUBJECT IDENTIFIER</span>
+                <h1>
+                    YOUR NAME<br /><span
+                        style="background: var(--accent); padding: 0 5px"
+                        >TITLE / ROLE</span
+                    >
+                </h1>
+
+                <div style="margin-top: 20px" class="grid-2">
+                    <div>
+                        <p class="mono-text"><strong>BIO:</strong></p>
+                        <p>
+                            Brief 2-3 sentence introduction about who you are.
+                            Focus on your raw focus, philosophy, and what drives
+                            your work. Keep it straightforward and bold.
+                        </p>
+                    </div>
+                    <div
+                        class="mono-text"
+                        style="
+                            border-left: 2px solid var(--main);
+                            padding-left: 15px;
+                        "
+                    >
+                        <p><strong>LOCATION:</strong> City, Country</p>
+                        <p><strong>FOCUS:</strong> Core Discipline / Tech</p>
+                        <p><strong>EMAIL:</strong> user@example.com</p>
+                        <a href="mailto:user@example.com" class="b-button"
+                            >INITIATE CONTACT</a
+                        >
+                    </div>
+                </div>
+            </header>
+
+            <!-- MAIN CONTENT GRID -->
+            <div class="grid-2">
+                <!-- ACHIEVEMENTS SECTION -->
+                <section class="b-box">
+                    <span class="b-tag">02 // MILESTONES & ACHIEVEMENTS</span>
+                    <h2>ACHIEVEMENTS</h2>
+                    <ul>
+                        <li>
+                            <strong>1st Place - Local Hackathon 2025</strong>
+                            <p
+                                class="mono-text"
+                                style="font-size: 0.85rem; color: #444"
+                            >
+                                Built a high-contrast web app processing
+                                real-time telemetry.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>100k+ Downloads / Users</strong>
+                            <p
+                                class="mono-text"
+                                style="font-size: 0.85rem; color: #444"
+                            >
+                                Maintained an open-source tool used by developer
+                                teams globally.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Dean's List / Academic Excellence</strong>
+                            <p
+                                class="mono-text"
+                                style="font-size: 0.85rem; color: #444"
+                            >
+                                Recognized for top 5% performance in Computer
+                                Science.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- ACTIVITIES SECTION -->
+                <section class="b-box">
+                    <span class="b-tag">03 // FIELD ACTIVITIES</span>
+                    <h2>ACTIVITIES</h2>
+                    <ul>
+                        <li>
+                            <strong>Lead Organizer @ Tech Club</strong>
+                            <p
+                                class="mono-text"
+                                style="font-size: 0.85rem; color: #444"
+                            >
+                                Managed bi-weekly workshops for 50+ active
+                                participants.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Open Source Contributor</strong>
+                            <p
+                                class="mono-text"
+                                style="font-size: 0.85rem; color: #444"
+                            >
+                                Active pull requests submitted to core web
+                                utilities.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Design & Build Sprint Mentor</strong>
+                            <p
+                                class="mono-text"
+                                style="font-size: 0.85rem; color: #444"
+                            >
+                                Guided junior teams in rapid prototyping
+                                techniques.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- PROJECTS & SKILLS SECTION -->
+            <section class="b-box">
+                <span class="b-tag">04 // EXECUTABLE UNITS & SKILLS</span>
+                <h2>PROJECTS & CAPABILITIES</h2>
+
+                <!-- SKILLS SUMMARY -->
+                <div style="margin-bottom: 25px">
+                    <p class="mono-text"><strong>CORE CAPABILITIES:</strong></p>
+                    <div class="badge-list">
+                        <span class="badge">JavaScript / TS</span>
+                        <span class="badge">UI/UX Wireframing</span>
+                        <span class="badge">HTML5 / CSS3</span>
+                        <span class="badge">System Architecture</span>
+                        <span class="badge">Git / Versioning</span>
+                        <span class="badge">Rapid Prototyping</span>
+                    </div>
+                </div>
+
+                <!-- PROJECTS LIST -->
+                <div class="grid-2">
+                    <div style="border: 2px dashed var(--main); padding: 15px">
+                        <h3>PROJECT ALPHA</h3>
+                        <p class="mono-text" style="font-size: 0.85rem">
+                            [CATEGORIZATION: WEB APP]
+                        </p>
+                        <p style="margin-top: 10px">
+                            A raw description of the project. Mention the main
+                            problem solved and the execution strategy.
+                        </p>
+                        <a
+                            href="#"
+                            class="b-button"
+                            style="font-size: 0.8rem; padding: 5px 10px"
+                            >VIEW SOURCE →</a
+                        >
+                    </div>
+
+                    <div style="border: 2px dashed var(--main); padding: 15px">
+                        <h3>PROJECT BETA</h3>
+                        <p class="mono-text" style="font-size: 0.85rem">
+                            [CATEGORIZATION: TOOLING]
+                        </p>
+                        <p style="margin-top: 10px">
+                            Another high-impact project. Highlighting
+                            minimalist, highly effective solutions to technical
+                            challenges.
+                        </p>
+                        <a
+                            href="#"
+                            class="b-button"
+                            style="font-size: 0.8rem; padding: 5px 10px"
+                            >LIVE DEMO →</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer
+                style="
+                    text-align: center;
+                    font-family: var(--font-mono);
+                    font-size: 0.8rem;
+                    margin-top: 20px;
+                "
+            >
+                <p>END OF FILE // MANIFEST UPDATED MANUAL</p>
+            </footer>
+        </div>
+    </body>
+</html>

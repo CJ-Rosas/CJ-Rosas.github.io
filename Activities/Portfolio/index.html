@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="design.css" />
+    <script src="functions.js" defer></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="StatusBar">
+        <span>[STATUS: AVAILABLE FOR HIRE]</span>
+        <span>SYS_LOG_2026.RAW</span>
+      </div>
+
+      <header class="thebox">
+        <span class="b-tag"> // ABOUT ME</span>
+        <div class="grid-2" style="grid-template-columns: 2fr 1fr">
+          <div>
+            <h1>
+              <span class="hero-text">CHRISTIAN JACOB ROSAS</span><br />
+              <span
+                class="hero-text hero-accent"
+                style="background: var(--accent); padding: 0 5px"
+                >computer science</span
+              ><br />
+              <span class="hero-text" style="padding: 0 5px">STUDENT</span>
+            </h1>
+          </div>
+
+          <div>
+            <img
+              src="https://i.pinimg.com/736x/6b/c6/a6/6bc6a683f2ec0cca59f7aee131990f90.jpg"
+              alt="pfp"
+              height="400"
+              width="400"
+            />
+          </div>
+        </div>
+
+        <p class="mono-text">Capabilities:</p>
+        <div class="badge-list">
+          <h6 class="badge">Java</h6>
+          <h6 class="badge">Html5</h6>
+          <h6 class="badge">Css3</h6>
+          <h6 class="badge">Small background in Unity</h6>
+        </div>
+
+        <div style="margin-top: 20px" class="grid-2">
+          <div>
+            <p class="mono-text"><strong>BIO:</strong></p>
+            <p>
+              Brief 2-3 sentence introduction about who you are. Focus on your
+              raw focus, philosophy, and what drives your work. Keep it
+              straightforward and bold.
+            </p>
+          </div>
+          <div
+            class="mono-text"
+            style="border-left: 2px solid var(--main); padding-left: 15px"
+          >
+            <p><strong>LOCATION:</strong> City, Country</p>
+            <p><strong>FOCUS:</strong> Core Discipline / Tech</p>
+            <p><strong>EMAIL:</strong> user@example.com</p>
+            <a href="mailto:user@example.com" class="b-button"
+              >INITIATE CONTACT</a
+            >
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="theboxbody">
+          <div class="bodyNav">
+            <a class="b-button" data-target="Achievements" style="background-color: #ccff00;">Achievements</a>
+            <a class="b-button" data-target="Activities" style="background-color:#d6d281;">Activities</a>
+            <a class="b-button" data-target="Projects" style="background-color: #d98545;">Projects</a>
+          </div>
+
+          <!--for Achievement-->
+          <div class="Panel active" id="Achievements">
+            <div class="shelf">
+              <div>
+                <div class="shelfTitle">
+                  <h3>Excellence in Research in TVL: ICT</h3>
+                </div>
+                <div class="shelfDesc">
+                  <p>Desc</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--for Activities-->
+          <div class="Panel" id="Activities">
+            <div class="shelf">
+              <div>
+                <a href="#" class="b-button"> Activity 1 </a>
+              </div>
+              <div>
+                <p class="mono-text border">Desc here longer</p>
+              </div>
+            </div>
+          </div>
+
+          <!--for Projects-->
+          <div class="Panel" id="Projects">
+            <div>
+              <div class="badge-list">
+                <h3 class="mono-text"><strong>Portfolio</strong></h3>
+                <p class="badge">Status : Ongoing</p>
+              </div>
+              <div>
+                <p class="shelfDesc border mono-text">
+                  context context
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
