@@ -31,3 +31,17 @@ buttons.forEach((btn) => {
     spawnRipple(e.clientX, e.clientY, color);
   });
 });
+
+// Fade the About Me content in/out as it enters/leaves the viewport
+const introObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("in-view", entry.isIntersecting);
+    });
+  },
+  { threshold: 0.15 }
+);
+
+document
+  .querySelectorAll(".intro-item")
+  .forEach((el) => introObserver.observe(el));

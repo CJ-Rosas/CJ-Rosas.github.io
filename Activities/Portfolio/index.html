@@ -14,9 +14,9 @@
         <span>SYS_LOG_2026.RAW</span>
       </div>
 
-      <header class="thebox">
+      <header class="thebox" id="start">
         <span class="b-tag"> // ABOUT ME</span>
-        <div class="grid-2" style="grid-template-columns: 2fr 1fr">
+        <div class="grid-2 intro-item" style="grid-template-columns: 2fr 1fr">
           <div>
             <h1>
               <span class="hero-text">CHRISTIAN JACOB ROSAS</span><br />
@@ -39,42 +39,75 @@
           </div>
         </div>
 
-        <p class="mono-text">Capabilities:</p>
-        <div class="badge-list">
-          <h6 class="badge">Java</h6>
-          <h6 class="badge">Html5</h6>
-          <h6 class="badge">Css3</h6>
-          <h6 class="badge">Small background in Unity</h6>
+        <div class="intro-item">
+          <p class="mono-text">Capabilities:</p>
+          <div class="badge-list intro-item">
+            <h6 class="badge">Java</h6>
+            <h6 class="badge">Html5</h6>
+            <h6 class="badge">Css3</h6>
+            <h6 class="badge">Small background in Unity</h6>
+          </div>
         </div>
 
         <div style="margin-top: 20px" class="grid-2">
-          <div>
+          <div class="intro-item">
             <p class="mono-text"><strong>BIO:</strong></p>
             <p>
-              Brief 2-3 sentence introduction about who you are. Focus on your
-              raw focus, philosophy, and what drives your work. Keep it
-              straightforward and bold.
+              <strong class="hero-text"
+                >"You must have the courge to walk without a purpose"</strong
+              >
+              As a computer science student, I value persistance towards
+              imporvement whether it is towards learning, passion or career. I
+              believe the yeagerness to presist and adapt to new technological
+              changes is the future of the tech industry.
             </p>
           </div>
           <div
-            class="mono-text"
+            class="mono-text intro-item"
             style="border-left: 2px solid var(--main); padding-left: 15px"
           >
-            <p><strong>LOCATION:</strong> City, Country</p>
-            <p><strong>FOCUS:</strong> Core Discipline / Tech</p>
-            <p><strong>EMAIL:</strong> user@example.com</p>
-            <a href="mailto:user@example.com" class="b-button"
-              >INITIATE CONTACT</a
+            <span><strong>LOCATION:</strong> Davao City, Philippines</span
+            ><br />
+            <span
+              ><strong>FOCUS:</strong> Algorithms, Networking, Game
+              Development</span
+            ><br />
+            <a
+              href="mailto:jacob1219@gmail.com"
+              style="color: #16701c"
+              class="hero-text"
+              ><strong>EMAIL:</strong> jacob1219@gmail.com</a
+            ><br />
+            <a
+              href="https://github.com/CJ-Rosas"
+              style="color: #16701c"
+              class="hero-text"
+              ><strong>Github:</strong> CJ-Rosas</a
             >
           </div>
         </div>
       </header>
       <div class="content">
-        <section class="theboxbody">
-          <div class="bodyNav">
-            <a class="b-button" data-target="Achievements" style="background-color: #ccff00;">Achievements</a>
-            <a class="b-button" data-target="Activities" style="background-color:#d6d281;">Activities</a>
-            <a class="b-button" data-target="Projects" style="background-color: #d98545;">Projects</a>
+        <section class="theboxbody intro-item">
+          <div class="bodyNav intro-item">
+            <a
+              class="b-button intro-item active"
+              data-target="Achievements"
+              style="background-color: #ccff00"
+              >Achievements</a
+            >
+            <a
+              class="b-button intro-item active"
+              data-target="Activities"
+              style="background-color: #d6d281"
+              >Activities</a
+            >
+            <a
+              class="b-button intro-item active"
+              data-target="Projects"
+              style="background-color: #d98545"
+              >Projects</a
+            >
           </div>
 
           <!--for Achievement-->
@@ -85,7 +118,25 @@
                   <h3>Excellence in Research in TVL: ICT</h3>
                 </div>
                 <div class="shelfDesc">
-                  <p>Desc</p>
+                  <p>
+                    This quasi-experimental study evaluated
+                    <a
+                      style="color: #16701c"
+                      class="hero-text"
+                      href="docs/KAINPOINTS_Research_Paper.pdf"
+                      target="_blank"
+                      >KAINPOINTS</a
+                    >, a mobile educational game designed to boost nutritional
+                    literacy among junior high school students through
+                    interactive trivia and matching mechanics. As the sole
+                    fullstack developer, I conceptualized the core research
+                    idea, engineered the entire game application, and
+                    contributed to the literature review and citations.
+                    Recognized with the Excellence in Research in TVL ICT award,
+                    the project demonstrated a statistically significant
+                    increase in post-test nutritional knowledge scores among
+                    students using the app compared to the control group.
+                  </p>
                 </div>
               </div>
             </div>
@@ -95,10 +146,36 @@
           <div class="Panel" id="Activities">
             <div class="shelf">
               <div>
-                <a href="#" class="b-button"> Activity 1 </a>
+                <a
+                  href="https://cj-rosas.github.io/Activities/fashion_blog.html"
+                  target="_blank"
+                  class="b-button"
+                >
+                  Fashion Blog
+                </a>
               </div>
               <div>
-                <p class="mono-text border">Desc here longer</p>
+                <p class="mono-text border">
+                  An class activity to make a fashion blog.
+                </p>
+              </div>
+            </div>
+
+            <div class="shelf">
+              <div>
+                <a
+                  href="https://cj-rosas.github.io/Activities/Wine%20festival/index.html"
+                  target="_blank"
+                  class="b-button"
+                >
+                  Wine Festival
+                </a>
+              </div>
+              <div>
+                <p class="mono-text border">
+                  An class activity to make a wine festival website that focuses
+                  on tables.
+                </p>
               </div>
             </div>
           </div>
@@ -107,16 +184,46 @@
           <div class="Panel" id="Projects">
             <div>
               <div class="badge-list">
-                <h3 class="mono-text"><strong>Portfolio</strong></h3>
-                <p class="badge">Status : Ongoing</p>
+                <h3 class="mono-text">
+                  <strong
+                    ><a href="#start" style="color: #16701c"
+                      >Portfolio Website</a
+                    ></strong
+                  >
+                </h3>
+                <p class="badge" style="background-color: #ccff00">
+                  Status : Completed
+                </p>
               </div>
               <div>
                 <p class="shelfDesc border mono-text">
-                  context context
+                  A responsive portfolio website showcasing my projects and
+                  skills.
                 </p>
               </div>
             </div>
 
+            <div>
+              <div class="badge-list">
+                <h3 class="mono-text">
+                  <strong
+                    ><a href="#" target="_blank" style="color: #16701c"
+                      >KAINPOINTS</a
+                    ></strong
+                  >
+                </h3>
+                <p class="badge" style="background-color: #ccff00">
+                  Status : Completed
+                </p>
+              </div>
+              <div>
+                <p class="shelfDesc border mono-text">
+                  A mobile educational game designed to boost nutritional
+                  literacy among junior high school students through interactive
+                  trivia and matching mechanics.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>

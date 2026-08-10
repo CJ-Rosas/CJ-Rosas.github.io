@@ -251,6 +251,26 @@ h1 {
 
 @keyframes ripple-pop {
   0%   { transform: translate(-50%, -50%) scale(0);  opacity: 1; }
-  60%  { transform: translate(-50%, -50%) scale(18); opacity: 1; }
   100% { transform: translate(-50%, -50%) scale(22); opacity: 0; }
+}
+/* Fade/slide animation for About Me content, replays each time it enters view */
+.intro-item {
+opacity: 0;
+transform: translateY(18px);
+transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.intro-item.in-view {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* Small pop when a tab panel becomes active (transition only, no intro) */
+.Panel.active {
+animation: panel-pop 0.3s ease;
+}
+
+@keyframes panel-pop {
+0% { opacity: 0; transform: scale(0.96) translateY(6px); }
+100% { opacity: 1; transform: scale(1) translateY(0); }
 }
