@@ -224,10 +224,12 @@ body {
 .circular-image {
   width: 200px;
   height: 200px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover; /* Prevents distortion if the image isn't natively square */
+  border: var(--border);
+  display: block;
 }
-
 
 /*Font stuff*/
 h1 {
