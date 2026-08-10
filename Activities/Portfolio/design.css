@@ -221,6 +221,14 @@ body {
   visibility: visible;
 }
 
+.circular-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; /* Prevents distortion if the image isn't natively square */
+}
+
+
 /*Font stuff*/
 h1 {
   font-size: clamp(1.8rem, 4.5vw, 3rem);
