@@ -15,6 +15,13 @@ First small class project to learn about html.
 ## Assests Folder
 Consists of assests used for project or as a reference.
 
+## Previous Project
+Currently only consists one project
+
+## Things to add in the future to this repository
+- Current projects/ongoing projects
+- Future Projects
+
 ## Built With
 HTML, CSS, JavaScript
 
