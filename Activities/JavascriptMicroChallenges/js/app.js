@@ -1,3 +1,5 @@
+//members: Rosas, Irig, Tingson
+
 // 1. Target DOM Nodes (Matching Slide 7)
 const categoryNameInput = document.getElementById("txtCatName");
 const categoryDescInput = document.getElementById("txtCatDesc");
@@ -14,14 +16,14 @@ addCategoryBtn.addEventListener("click", handleAddCategory);
 });
 
 // Event delegation: one listener handles delete clicks for every row,
-// including rows added after page load.
+// including rows added after page load - DELETE BUTTON.
 incomeTableBody.addEventListener("click", (e) => {
   if (e.target.classList.contains("btn-del")) {
     e.target.closest("tr").remove();
   }
 });
 
-// 3. Validation Helper
+// 3. Validation Helper, bootstrap
 function setValid(input, isOk) {
   input.classList.toggle("is-invalid", !isOk);
   input.classList.toggle("is-valid", isOk);
