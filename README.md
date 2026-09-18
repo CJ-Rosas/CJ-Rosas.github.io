@@ -13,6 +13,9 @@ A html project focusing on tables with a css template.
 First small class project to learn about html.
 - **Javascript Mirco Challenges** -
 This activity was meant to teach DOM event handling and dynamic UI updates without a framework, tasked with replacing native alert() popups with Bootstrap inline validation (.is-invalid/.is-valid) and adding a delete function for dynamically created table rows.
+Front End: Rosas
+QA: Irig
+System Analysis: Tingson
 
 ## Assests Folder
 Consists of assests used for project or as a reference.
