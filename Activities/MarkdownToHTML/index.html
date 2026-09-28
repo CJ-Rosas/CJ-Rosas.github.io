@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown to HTML Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Status Bar -->
+      <div class="StatusBar">
+        <span>[SYSTEM: ONLINE]</span>
+        <span>MARKDOWN_TO_HTML_v1.0.RAW</span>
+      </div>
+
+      <!-- Main Neo-Brutalist Container -->
+      <main class="thebox">
+        <span class="b-tag">// CONVERTER ENGINE</span>
+
+        <div class="grid-3">
+          <!-- Column 1: Markdown Input -->
+          <div class="panel-card">
+            <div class="panel-header">
+              <span class="badge">01</span>
+              <label for="markdown-input" class="mono-text"
+                >MARKDOWN INPUT</label
+              >
+            </div>
+            <textarea
+              id="markdown-input"
+              placeholder="Enter markdown here..."
+            ></textarea>
+          </div>
+
+          <!-- Column 2: Raw HTML Output -->
+          <div class="panel-card">
+            <div class="panel-header">
+              <span class="badge" style="background-color: var(--accent2)"
+                >02</span
+              >
+              <span class="mono-text">RAW HTML OUTPUT</span>
+            </div>
+            <div id="html-output"></div>
+          </div>
+
+          <!-- Column 3: Rendered Preview -->
+          <div class="panel-card">
+            <div class="panel-header">
+              <span class="badge" style="background-color: var(--accent3)"
+                >03</span
+              >
+              <span class="mono-text">HTML PREVIEW</span>
+            </div>
+            <div id="preview"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
